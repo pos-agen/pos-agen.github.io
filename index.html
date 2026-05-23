@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pos Agen — POS AI untuk Jualanmu</title>
-<meta name="description" content="Pos Agen — POS AI untuk jualanmu. AI membaca chat WhatsApp dan membuat pesanan otomatis dalam 2 detik. Akurasi 98%, 500+ distributor aktif di Indonesia. Coba gratis 14 hari.">
+<meta name="description" content="Pos Agen — POS AI untuk jualanmu. AI membaca chat WhatsApp dan membuat pesanan otomatis dalam 5 detik. Akurasi 98%, daftar kurang dari 1 menit. Coba gratis 14 hari.">
 <meta name="keywords" content="POS distributor, AI order, WhatsApp order, Pos Agen, aplikasi distributor, POS AI, manajemen pesanan, point of sale Indonesia">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Pos Agen">
@@ -12,12 +12,14 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://parang.ai/">
 <meta property="og:title" content="Pos Agen — POS AI untuk Jualanmu">
-<meta property="og:description" content="AI membaca chat WhatsApp dan langsung membuat pesanan otomatis dalam 2 detik. Akurasi 98%, tanpa ketik ulang. Coba gratis 14 hari.">
+<meta property="og:description" content="AI membaca chat WhatsApp dan langsung membuat pesanan otomatis dalam 5 detik. Akurasi 98%, tanpa ketik ulang. Coba gratis 14 hari.">
 <meta property="og:locale" content="id_ID">
 <meta property="og:site_name" content="Pos Agen">
+<meta property="og:image" content="https://parang.ai/assets/images/dashboard-parang-ai.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pos Agen — POS AI untuk Jualanmu">
-<meta name="twitter:description" content="AI membaca chat WhatsApp dan membuat pesanan otomatis dalam 2 detik. 500+ distributor aktif.">
+<meta name="twitter:description" content="AI membaca chat WhatsApp dan membuat pesanan otomatis dalam 5 detik. Daftar kurang dari 1 menit, gratis.">
+<meta name="twitter:image" content="https://parang.ai/assets/images/dashboard-parang-ai.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -25,12 +27,13 @@
   "name": "Pos Agen",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "iOS, Android",
-  "description": "POS AI untuk distributor. AI membaca chat WhatsApp dan membuat pesanan otomatis dalam 2 detik. Akurasi 98%, 500+ distributor aktif di seluruh Indonesia.",
+  "description": "POS AI untuk distributor. AI membaca chat WhatsApp dan membuat pesanan otomatis dalam 5 detik. Akurasi 98%, daftar kurang dari 1 menit.",
   "url": "https://parang.ai/",
   "offers": [
-    {"@type":"Offer","name":"Starter","price":"0","priceCurrency":"IDR","description":"30 pesanan per bulan, 1 admin, ekstraksi AI dasar"},
-    {"@type":"Offer","name":"Pro","price":"149000","priceCurrency":"IDR","description":"500 pesanan per bulan, 3 admin, ekstraksi AI penuh"},
-    {"@type":"Offer","name":"Bisnis","price":"349000","priceCurrency":"IDR","description":"Pesanan unlimited, 10 admin, AI custom, API access"}
+    {"@type":"Offer","name":"Starter","price":"0","priceCurrency":"IDR","description":"5 kontak terdaftar, 1.000 AI kredit/bulan, katalog 20 produk, 1 admin"},
+    {"@type":"Offer","name":"Pro","price":"30000","priceCurrency":"IDR","description":"30 kontak terdaftar, 15.000 AI kredit/bulan, katalog unlimited, 3 admin"},
+    {"@type":"Offer","name":"Bisnis","price":"75000","priceCurrency":"IDR","description":"250 kontak terdaftar, 50.000 AI kredit/bulan, katalog unlimited, 10 admin"},
+    {"@type":"Offer","name":"Enterprise","priceCurrency":"IDR","description":"Kontak & kredit custom, admin tak terbatas, dedicated account manager, SLA respons < 4 jam"}
   ]
 }
 </script>
@@ -103,7 +106,7 @@ body {
 
 /* ── NAV ─────────────────────────────────────────── */
 nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  position: fixed; top: 40px; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; gap: 0;
   padding: 0 40px; height: 64px;
   background: var(--nav-bg);
@@ -131,6 +134,16 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 .nav-wordmark .w-agen { color: var(--teal-light); }
 [data-theme="dark"] .nav-wordmark .w-pos,
 [data-theme="dark"] .nav-wordmark .w-agen { color: #ffffff; }
+
+.badge-beta {
+  display: inline-flex; align-items: center;
+  padding: 2px 7px; border-radius: 999px;
+  background: rgba(26,160,161,0.15); border: 0.5px solid rgba(26,160,161,0.35);
+  color: var(--teal); font-size: 10px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  line-height: 1; margin-left: 2px; vertical-align: middle;
+  user-select: none;
+}
 
 .nav-links { display: flex; gap: 28px; list-style: none; flex: 1; }
 .nav-links a { font-size: 14px; color: var(--text-2); text-decoration: none; font-weight: 500; transition: color .15s; }
@@ -167,7 +180,7 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 /* ── HERO ─────────────────────────────────────────── */
 /* HERO A: Bold Dark */
 .hero-a {
-  min-height: 100vh; padding-top: 64px;
+  min-height: 100vh; padding-top: 104px;
   background: var(--teal-darkest);
   display: flex; align-items: center;
   position: relative; overflow: hidden;
@@ -234,7 +247,7 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 
 /* HERO B: Clean Split */
 .hero-b {
-  min-height: 100vh; padding-top: 64px;
+  min-height: 100vh; padding-top: 104px;
   background: var(--bg);
   display: none; align-items: center;
   position: relative; overflow: hidden;
@@ -272,11 +285,11 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 .phone-wrap {
   position: relative;
   display: flex; justify-content: flex-start; align-items: center;
-  height: 580px; padding-left: 20px;
+  height: 580px;
 }
 .phone {
-  width: 264px; height: 558px;
-  background: #0a1515; border-radius: 46px;
+  height: 558px;
+  background: #0a1515; border-radius: 30px;
   border: 2.5px solid rgba(255,255,255,0.13);
   box-shadow:
     0 0 0 8px rgba(0,0,0,0.38),
@@ -284,16 +297,12 @@ nav.scrolled { box-shadow: var(--shadow-md); }
     inset 0 1px 0 rgba(255,255,255,0.07);
   overflow: hidden; position: relative; flex-shrink: 0; z-index: 2;
 }
-.phone-notch {
-  position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
-  width: 98px; height: 27px; background: #000; border-radius: 14px; z-index: 10;
-}
 .phone img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
 .phone-back {
-  position: absolute; right: 0; top: 56px;
-  width: 220px; height: 464px;
-  background: #0a1515; border-radius: 36px;
-  border: 2px solid rgba(255,255,255,0.07);
+  position: absolute; right: -12px; top: 56px;
+  height: 464px;
+  background: #0a1515; border-radius: 30px;
+  border: 2.5px solid rgba(255,255,255,0.07);
   box-shadow: 0 24px 56px rgba(0,0,0,0.38);
   overflow: hidden; z-index: 1; opacity: 0.62;
 }
@@ -320,18 +329,21 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 .stats-bar {
   background: var(--surface);
   border-bottom: 0.5px solid var(--border);
-  padding: 0 48px;
   transition: background .3s, border-color .3s;
 }
 .stats-bar-inner {
-  max-width: 1200px; margin: 0 auto;
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .sb-item {
-  padding: 30px 28px;
+  padding: 30px 20px;
   border-right: 0.5px solid var(--border);
+  flex-grow: 1;
+  min-width: 160px;
 }
-.sb-item:first-child { padding-left: 0; }
 .sb-item:last-child  { border-right: none; }
 .sb-num { font-size: 33px; font-weight: 900; letter-spacing: -0.045em; color: var(--text); line-height: 1; margin-bottom: 6px; }
 .sb-num b { color: var(--teal); font-weight: 900; }
@@ -358,22 +370,51 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 .how-sec { background: var(--bg); }
 
 .how-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  column-gap: 14px; row-gap: 64px; margin-top: 56px; position: relative;
+  display: flex;
+  margin-top: 56px;
+  position: relative;
+  gap: 14px;
+  flex-wrap: wrap;
+  row-gap: 56px;
+  justify-content: space-evenly;
 }
-.how-col { display: contents; }
-.how-col .step-card { grid-row: 1; align-self: start; }
-.how-col .demo-card { grid-row: 2; }
-.steps-line {
-  position: absolute; top: 24px;
-  left: calc(12.5% + 24px); right: calc(12.5% + 24px);
-  height: 1px; background: var(--border); z-index: 0;
+
+.how-col {
+  display: flex;
+  gap: 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 276.5px;
+  max-width: 370px;
+  width: 100%;
+  flex: 1;
 }
+
+.how-col .demo-frame {
+  border-radius: 40px;
+  border: 10px solid #EEECE7;
+  background-color: #EEECE7;
+}
+
+.how-col .demo-card {
+  width: 100%;
+}
+
+.how-col .demo-frame {
+  width: 100%;
+}
+
+.how-col .demo-frame img {
+  width: 100%;
+}
+
 .step-card {
   background: var(--surface); border: 0.5px solid var(--border);
   border-radius: var(--r-xl); padding: 26px 22px;
   position: relative; z-index: 1;
   transition: border-color .2s, box-shadow .2s, transform .2s;
+  min-height: 217px;
 }
 .step-card:hover {
   border-color: var(--teal);
@@ -394,9 +435,9 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 .demo-frame {
   width: 100%; border-radius: 26px; overflow: hidden;
   border: 2px solid var(--border); box-shadow: var(--shadow-md);
-  background: var(--surface); aspect-ratio: 9/19.5;
+  background: var(--surface);
 }
-.demo-frame img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.demo-frame img { object-fit: cover; object-position: top; display: block; }
 .demo-tag {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.07em; color: var(--teal);
@@ -441,7 +482,7 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 .feat-checks li::before { content: '✓'; position: absolute; left: 0; color: #79d5d6; font-weight: 700; }
 
 .feat-demo {
-  border-radius: var(--r-lg); overflow: hidden;
+  border-radius: 40px; overflow: hidden;
   box-shadow: 0 18px 44px rgba(0,0,0,0.32);
   border: 1px solid rgba(255,255,255,0.09);
 }
@@ -450,12 +491,12 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 /* ── PRICING ──────────────────────────────────────── */
 .price-sec { background: var(--bg); }
 .price-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(4, 1fr);
   gap: 16px; margin-top: 56px; align-items: start;
 }
 .price-card {
   background: var(--surface); border: 0.5px solid var(--border);
-  border-radius: var(--r-xl); padding: 32px;
+  border-radius: var(--r-xl); padding: 24px;
   transition: box-shadow .2s; position: relative;
 }
 .price-card:hover { box-shadow: var(--shadow-lg); }
@@ -488,6 +529,7 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 .price-card.pop .price-feats li::before { color: #79d5d6; }
 .price-div { height: 0.5px; background: var(--border); margin-bottom: 24px; }
 .price-card.pop .price-div { background: rgba(255,255,255,0.1); }
+.price-hint { font-size: 12px; color: var(--text-3); margin-top: 16px; text-align: center; }
 
 /* ── CTA ──────────────────────────────────────────── */
 .cta-sec {
@@ -634,6 +676,43 @@ footer {
 }
 .cta-dl-badges { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
 
+/* ── COMING SOON BADGE ────────────────────────────── */
+.dl-badge.dl-soon {
+  cursor: default; pointer-events: none; opacity: .72;
+  position: relative;
+}
+.dl-badge.dl-soon:hover { transform: none; }
+.dl-soon-tag {
+  display: inline-block; font-size: 8px; font-weight: 700;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.85);
+  border-radius: 4px; padding: 2px 5px; margin-top: 3px; line-height: 1.4;
+  align-self: flex-start;
+}
+.dl-badge.dl-light .dl-soon-tag {
+  background: var(--teal-light, rgba(20,184,166,0.12));
+  color: var(--teal, #14b8a6);
+}
+
+/* ── ANNOUNCE BAR ────────────────────────────────── */
+.announce-bar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 101;
+  height: 40px;
+  background: linear-gradient(90deg, var(--teal-dark) 0%, var(--teal-light) 100%);
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; font-size: 13px; font-weight: 600; color: #fff;
+  letter-spacing: -0.01em;
+}
+.announce-bar a {
+  color: #fff; text-decoration: underline;
+  text-underline-offset: 2px; opacity: 0.9;
+  transition: opacity .15s;
+}
+.announce-bar a:hover { opacity: 1; }
+[data-theme="dark"] .announce-bar {
+  background: linear-gradient(90deg, #004f50 0%, var(--teal) 100%);
+}
+
 /* ── FADE UP ──────────────────────────────────────── */
 .fu { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s ease; }
 .fu.vis { opacity: 1; transform: none; }
@@ -652,31 +731,47 @@ footer {
 @media (max-width: 960px) {
   .hero-inner { grid-template-columns: 1fr; }
   .phone-wrap { display: none; }
-  .how-grid { grid-template-columns: 1fr 1fr; row-gap: 32px; }
   .how-col { display: flex; flex-direction: column; gap: 20px; }
-  .steps-line { display: none; }
   .feat-grid { grid-template-columns: 1fr; }
   .feat-card.big { grid-column: span 1; grid-template-columns: 1fr; }
-  .price-grid { grid-template-columns: 1fr; max-width: 420px; }
+  .price-grid { grid-template-columns: repeat(2, 1fr); max-width: 860px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  .stats-bar-inner { grid-template-columns: 1fr 1fr; }
-  .sb-item:nth-child(2) { border-right: none; }
   nav .nav-links { display: none; }
+  .hero-ctas .btn { width: 221px; }
+
+  #pricing .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
-@media (max-width: 580px) {
-  .how-grid { grid-template-columns: 1fr; }
+
+@media (max-width: 640px) {
+  .cta-form { flex-wrap: wrap; }
+  .cta-form > * { flex-grow: 1; }
+  .how-col { max-width: none; }
+  .sb-item { min-width: 214px; flex: 1; border-bottom: 0.5px solid var(--border); }
+  .sb-item:nth-child(2)  { border-right: none; }
+  .price-grid { grid-template-columns: 1fr; max-width: 420px; }
 }
 </style>
 <noscript><style>.fu{opacity:1!important;transform:none!important}#tweaks{display:none!important}</style></noscript>
 </head>
 <body>
 
+<!-- ══ ANNOUNCE BAR ══════════════════════════════════ -->
+<div class="announce-bar">
+  <span>🎉 Selama masa Beta: semua fitur gratis &amp; tanpa limit</span>
+  <span style="opacity:.4">·</span>
+  <a href="#cta">Daftar sekarang →</a>
+</div>
+
 <!-- ══ NAV ══════════════════════════════════════════ -->
 <nav id="navbar">
   <a class="nav-logo" href="#">
     <img class="logo-svg logo-light" src="assets/icons/logo.svg" width="30" height="30" alt="Pos Agen">
     <img class="logo-svg logo-dark" src="assets/icons/dark-logo.svg" width="30" height="30" alt="Pos Agen">
-    <span class="nav-wordmark"><span class="w-pos">Pos</span><span class="w-agen">Agen</span></span>
+    <span class="nav-wordmark"><span class="w-pos">Pos</span><span class="w-agen">Agen</span></span><span class="badge-beta">Beta</span>
   </a>
   <ul class="nav-links">
     <li><a href="#how">Cara Kerja</a></li>
@@ -696,11 +791,11 @@ footer {
   <div class="hero-inner">
     <div>
       <div class="hero-eyebrow">
-        <img style="margin-top: -2.5px;" src="assets/icons/sparkle-teal.svg" width="14" height="14" alt="">
+        <img style="margin-top: -2px;" src="assets/icons/sparkle-teal.svg" width="14" height="14" alt="">
         POS AI untuk Distributor
       </div>
       <h1 class="hero-title">
-        Pesanan WhatsApp<br>jadi order<br><span class="hi">dalam 2 detik</span>
+        Pesanan WhatsApp<br>jadi order<br><span class="hi">dalam 5 detik</span>
       </h1>
       <p class="hero-sub">
         Pos Agen membaca chat dari toko-toko Anda, mengekstrak item &amp; jumlah secara otomatis, langsung masuk POS. Tidak perlu ketik ulang — tidak ada lagi salah hitung.
@@ -711,14 +806,15 @@ footer {
       </div>
       <div class="dl-row">
         <span class="dl-lbl">Download Aplikasi</span>
-        <a href="#" class="dl-badge" aria-label="Download di App Store">
+        <span class="dl-badge dl-soon" aria-label="App Store – Segera Hadir">
           <img class="dl-ico" src="assets/icons/apple-store.svg" width="18" height="22" alt="">
           <div class="dl-text">
             <span class="dl-sup">Download di</span>
             <span class="dl-name">App Store</span>
+            <span class="dl-soon-tag">Segera Hadir</span>
           </div>
-        </a>
-        <a href="#" class="dl-badge" aria-label="Dapatkan di Google Play">
+        </span>
+        <a href="#" class="dl-badge" aria-label="Dapatkan di Google Play" style="height: 69px;">
           <img class="dl-ico" src="assets/icons/google-play.svg" width="19" height="22" alt="">
           <div class="dl-text">
             <span class="dl-sup">Dapatkan di</span>
@@ -726,34 +822,19 @@ footer {
           </div>
         </a>
       </div>
-      <div class="hero-stats">
-        <div>
-          <div class="hs-num">2 dtk</div>
-          <div class="hs-lbl">Rata-rata proses<br>per pesanan</div>
-        </div>
-        <div>
-          <div class="hs-num">98%</div>
-          <div class="hs-lbl">Akurasi<br>ekstraksi AI</div>
-        </div>
-        <div>
-          <div class="hs-num">500+</div>
-          <div class="hs-lbl">Distributor<br>aktif</div>
-        </div>
-      </div>
     </div>
     <div class="phone-wrap">
       <div class="phone-back">
         <img src="assets/images/inbox-whatsapp.png" alt="Inbox WhatsApp">
       </div>
       <div class="phone">
-        <div class="phone-notch"></div>
         <img src="assets/images/dashboard-parang-ai.png" alt="Dashboard Parang.ai">
       </div>
       <div class="badge-float">
         <div class="badge-ico">⚡</div>
         <div>
           <div class="badge-main">AI memproses pesanan</div>
-          <div class="badge-sub">selesai dalam 2 detik</div>
+          <div class="badge-sub">selesai dalam 5 detik</div>
         </div>
       </div>
     </div>
@@ -770,7 +851,7 @@ footer {
         POS AI untuk Distributor
       </div>
       <h1 class="hero-title">
-        Pesanan WhatsApp<br>jadi order<br><span class="hi">dalam 2 detik</span>
+        Pesanan WhatsApp<br>jadi order<br><span class="hi">dalam 5 detik</span>
       </h1>
       <p class="hero-sub">
         Pos Agen membaca chat dari toko-toko Anda, mengekstrak item &amp; jumlah secara otomatis, langsung masuk POS. Tidak perlu ketik ulang — tidak ada lagi salah hitung.
@@ -781,13 +862,14 @@ footer {
       </div>
       <div class="dl-row">
         <span class="dl-lbl-light">Download Aplikasi</span>
-        <a href="#" class="dl-badge dl-light" aria-label="Download di App Store">
+        <span class="dl-badge dl-light dl-soon" aria-label="App Store – Segera Hadir">
           <img class="dl-ico" src="assets/icons/apple-store-text.svg" width="18" height="22" alt="">
           <div class="dl-text">
             <span class="dl-sup">Download di</span>
             <span class="dl-name">App Store</span>
+            <span class="dl-soon-tag">Segera Hadir</span>
           </div>
-        </a>
+        </span>
         <a href="#" class="dl-badge dl-light" aria-label="Dapatkan di Google Play">
           <img class="dl-ico" src="assets/icons/google-play-text.svg" width="19" height="22" alt="">
           <div class="dl-text">
@@ -796,34 +878,19 @@ footer {
           </div>
         </a>
       </div>
-      <div class="hero-stats">
-        <div>
-          <div class="hs-num">2 dtk</div>
-          <div class="hs-lbl">Rata-rata proses<br>per pesanan</div>
-        </div>
-        <div>
-          <div class="hs-num">98%</div>
-          <div class="hs-lbl">Akurasi<br>ekstraksi AI</div>
-        </div>
-        <div>
-          <div class="hs-num">500+</div>
-          <div class="hs-lbl">Distributor<br>aktif</div>
-        </div>
-      </div>
     </div>
     <div class="phone-wrap">
       <div class="phone-back">
         <img src="assets/images/inbox-whatsapp.png" alt="Inbox WhatsApp">
       </div>
       <div class="phone">
-        <div class="phone-notch"></div>
         <img src="assets/images/dashboard-parang-ai.png" alt="Dashboard Parang.ai">
       </div>
       <div class="badge-float">
         <div class="badge-ico">⚡</div>
         <div>
           <div class="badge-main">AI memproses pesanan</div>
-          <div class="badge-sub">selesai dalam 2 detik</div>
+          <div class="badge-sub">selesai dalam 5 detik</div>
         </div>
       </div>
     </div>
@@ -834,7 +901,7 @@ footer {
 <div class="stats-bar">
   <div class="stats-bar-inner">
     <div class="sb-item fu">
-      <div class="sb-num"><b>2</b> dtk</div>
+      <div class="sb-num"><b>5</b> dtk</div>
       <div class="sb-lbl">Rata-rata waktu<br>proses pesanan</div>
     </div>
     <div class="sb-item fu fu-d1">
@@ -842,8 +909,8 @@ footer {
       <div class="sb-lbl">Akurasi AI dalam<br>membaca pesanan</div>
     </div>
     <div class="sb-item fu fu-d2">
-      <div class="sb-num"><b>500</b>+</div>
-      <div class="sb-lbl">Distributor aktif<br>di seluruh Indonesia</div>
+      <div class="sb-num">&lt;<b>1</b> mnt</div>
+      <div class="sb-lbl">Waktu pendaftaran<br>langsung bisa pakai</div>
     </div>
     <div class="sb-item fu fu-d3">
       <div class="sb-num">Rp <b>0</b></div>
@@ -860,7 +927,6 @@ footer {
     <p class="sec-sub fu">Tidak perlu pelatihan khusus. Cukup buka Pos Agen, pilih chat, dan biarkan AI yang bekerja.</p>
 
     <div class="how-grid">
-      <div class="steps-line"></div>
       <div class="how-col">
         <div class="step-card fu">
           <div class="step-num">1</div>
@@ -869,7 +935,7 @@ footer {
         </div>
         <div class="demo-card fu">
           <div class="demo-frame">
-            <img src="assets/images/inbox-whatsapp.png" alt="Inbox WhatsApp" style="height: 561px; margin: -7px 0px 0px">
+            <img src="assets/images/inbox-whatsapp.png" alt="Inbox WhatsApp">
           </div>
           <div class="demo-tag">Langkah 1–2</div>
           <div class="demo-label">Inbox Chat</div>
@@ -883,7 +949,7 @@ footer {
         </div>
         <div class="demo-card fu fu-d1">
           <div class="demo-frame">
-            <img src="assets/images/ai-memproses.png" alt="AI Memproses" style="height: 565px; margin: -7px 0px 0px">
+            <img src="assets/images/ai-memproses.png" alt="AI Memproses">
           </div>
           <div class="demo-tag">Langkah 3</div>
           <div class="demo-label">AI Memproses</div>
@@ -893,11 +959,11 @@ footer {
         <div class="step-card fu fu-d2">
           <div class="step-num">3</div>
           <div class="step-title">AI bekerja</div>
-          <div class="step-desc">Dalam 2–3 detik, AI membaca chat, mendeteksi setiap item, jumlah, dan mencocokkan ke katalog.</div>
+          <div class="step-desc">Dalam 5–10 detik, AI membaca chat, mendeteksi setiap item, jumlah, dan mencocokkan ke katalog.</div>
         </div>
         <div class="demo-card fu fu-d2">
           <div class="demo-frame">
-            <img src="assets/images/review-pesanan.png" alt="Review Pesanan" style="height: 563px; margin: -7px 0px 0px 1px; width: 247px">
+            <img src="assets/images/review-pesanan.png" alt="Review Pesanan">
           </div>
           <div class="demo-tag">Langkah 4</div>
           <div class="demo-label">Periksa &amp; Konfirmasi</div>
@@ -997,11 +1063,13 @@ footer {
         <div class="price-per">selamanya</div>
         <div class="price-desc">Untuk dicoba, atau bisnis kecil yang baru mulai membangun sistem.</div>
         <ul class="price-feats">
-          <li>30 pesanan per bulan</li>
+          <li>Buat pesanan manual tak terbatas</li>
+          <li>Pelanggan terdaftar tak terbatas</li>
+          <li>Maksimal 5 kontak terhubung</li>
+          <li>1.000 AI kredit/bulan</li>
+          <li>Riwayat pesanan 14 hari</li>
+          <li>Katalog 20 produk</li>
           <li>1 admin</li>
-          <li>Ekstraksi AI dasar</li>
-          <li>Katalog hingga 50 produk</li>
-          <li>Laporan mingguan</li>
         </ul>
         <div class="price-div"></div>
         <a href="#cta" class="btn btn-ghost btn-block">Mulai Gratis</a>
@@ -1011,16 +1079,18 @@ footer {
       <div class="price-card pop fu fu-d1">
         <div class="pop-badge">Paling Populer</div>
         <div class="price-plan">Pro</div>
-        <div class="price-val">Rp 20rb</div>
+        <div class="price-val">Rp 30rb</div>
         <div class="price-per">per bulan</div>
         <div class="price-desc">Untuk distributor aktif yang butuh kecepatan dan volume tinggi.</div>
         <ul class="price-feats">
-          <li>500 pesanan per bulan</li>
-          <li>3 admin</li>
-          <li>Ekstraksi AI penuh</li>
+          <li>Buat pesanan manual tak terbatas</li>
+          <li>Pelanggan terdaftar tak terbatas</li>
+          <li>Maksimal 30 kontak terhubung</li>
+          <li>15.000 AI kredit/bulan</li>
+          <li>Riwayat pesanan 3 bulan</li>
           <li>Katalog unlimited</li>
-          <li>Laporan harian &amp; bulanan</li>
-          <li>Priority support WhatsApp</li>
+          <li>3 admin</li>
+          <li>Support via WhatsApp</li>
         </ul>
         <div class="price-div"></div>
         <a href="#cta" class="btn btn-teal btn-block">Coba 14 Hari Gratis</a>
@@ -1031,20 +1101,43 @@ footer {
         <div class="price-plan">Bisnis</div>
         <div class="price-val">Rp 75rb</div>
         <div class="price-per">per bulan</div>
-        <div class="price-desc">Untuk distributor besar dengan banyak tim dan kebutuhan custom.</div>
+        <div class="price-desc">Untuk distributor besar dengan banyak tim dan volume tinggi.</div>
         <ul class="price-feats">
-          <li>Pesanan unlimited</li>
+          <li>Buat pesanan manual tak terbatas</li>
+          <li>Pelanggan terdaftar tak terbatas</li>
+          <li>Maksimal 250 kontak terhubung</li>
+          <li>50.000 AI kredit/bulan</li>
+          <li>Riwayat pesanan 4 bulan</li>
+          <li>Katalog unlimited</li>
           <li>10 admin</li>
-          <li>AI + training katalog khusus</li>
-          <li>API access &amp; integrasi</li>
-          <li>Laporan custom &amp; export</li>
+          <li>Priority support WhatsApp</li>
+        </ul>
+        <div class="price-div"></div>
+        <a href="#cta" class="btn btn-ghost btn-block">Mulai Sekarang</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="price-card fu fu-d3">
+        <div class="price-plan">Enterprise</div>
+        <div class="price-val">Custom</div>
+        <div class="price-per">sesuai kebutuhan</div>
+        <div class="price-desc">Untuk jaringan distribusi besar dengan kebutuhan khusus.</div>
+        <ul class="price-feats">
+          <li>Buat pesanan manual tak terbatas</li>
+          <li>Kontak terhubung tak terbatas</li>
+          <li>Pelanggan terdaftar tak terbatas</li>
+          <li>Order kredit custom</li>
+          <li>Riwayat pesanan custom</li>
+          <li>Admin tak terbatas</li>
           <li>Dedicated account manager</li>
+          <li>Onboarding &amp; setup khusus</li>
           <li>SLA respons &lt; 4 jam</li>
         </ul>
         <div class="price-div"></div>
         <a href="#cta" class="btn btn-ghost btn-block">Hubungi Kami</a>
       </div>
     </div>
+    <p class="price-hint">* AI kredit digunakan saat AI memproses pesanan atau foto produk. Pesanan manual tidak mengurangi kredit.</p>
   </div>
 </section>
 
@@ -1052,22 +1145,22 @@ footer {
 <section class="cta-sec" id="cta">
   <div class="cta-inner">
     <h2 class="cta-title fu">Siap hemat waktu<br>input pesanan?</h2>
-    <p class="cta-sub fu">Bergabung dengan 500+ distributor yang sudah pakai Pos Agen. Coba gratis 14 hari — tidak perlu kartu kredit.</p>
-    <form class="cta-form fu" id="ctaForm">
-      <input class="cta-input" type="text" id="ctaInput" placeholder="Nomor WhatsApp Anda" autocomplete="tel">
-      <button type="submit" class="btn btn-teal btn-lg">Mulai Sekarang</button>
-    </form>
+    <p class="cta-sub fu">Daftar kurang dari 1 menit dan langsung coba gratis 14 hari — tidak perlu kartu kredit.</p>
+    <div class="fu">
+      <a href="https://wa.me/6280000000000?text=Halo%2C%20saya%20tertarik%20dengan%20Pos%20Agen.%20Boleh%20minta%20info%20lengkap%20tentang%20paket%20yang%20tersedia%3F%20%F0%9F%99%8F" target="_blank" rel="noopener noreferrer" class="btn btn-teal btn-lg">Mulai Sekarang via WhatsApp</a>
+    </div>
     <p class="cta-note">Gratis 14 hari · Tanpa kartu kredit · Bisa batal kapan saja</p>
     <div class="cta-dl-wrap fu">
       <div class="cta-dl-or">atau download aplikasi</div>
       <div class="cta-dl-badges">
-        <a href="#" class="dl-badge" aria-label="Download di App Store">
+        <span class="dl-badge dl-soon" aria-label="App Store – Segera Hadir">
           <img class="dl-ico" src="assets/icons/apple-store.svg" width="18" height="22" alt="">
           <div class="dl-text">
             <span class="dl-sup">Download di</span>
             <span class="dl-name">App Store</span>
+            <span class="dl-soon-tag">Segera Hadir</span>
           </div>
-        </a>
+        </span>
         <a href="#" class="dl-badge" aria-label="Dapatkan di Google Play">
           <img class="dl-ico" src="assets/icons/google-play.svg" width="19" height="22" alt="">
           <div class="dl-text">
@@ -1087,7 +1180,7 @@ footer {
       <div class="f-brand">
         Pos Agen
       </div>
-      <div class="f-tagline">POS distributor dengan AI yang membaca chat WhatsApp dan membuat pesanan otomatis dalam 2 detik.</div>
+      <div class="f-tagline">POS distributor dengan AI yang membaca chat WhatsApp dan membuat pesanan otomatis dalam 5 detik.</div>
     </div>
     <div>
       <div class="f-head">Produk</div>
@@ -1095,7 +1188,7 @@ footer {
         <a href="#how">Cara Kerja</a>
         <a href="#features">Fitur</a>
         <a href="#pricing">Harga</a>
-        <a href="#">Download App Store</a>
+        <a href="#" style="cursor:default;pointer-events:none;opacity:.5;">App Store <span style="font-size:9px;vertical-align:middle;background:rgba(0,0,0,.12);border-radius:3px;padding:1px 4px;">Segera</span></a>
         <a href="#">Download Google Play</a>
       </div>
     </div>
@@ -1173,16 +1266,6 @@ var io = new IntersectionObserver(function(entries) {
   entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('vis'); });
 }, { threshold: 0.12 });
 document.querySelectorAll('.fu').forEach(function(el) { io.observe(el); });
-
-/* ── CTA form ────────────────────────────── */
-document.getElementById('ctaForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  var input = document.getElementById('ctaInput');
-  if (input && input.value.trim()) {
-    input.value = '';
-    input.placeholder = '🎉 Terima kasih! Tim kami akan segera menghubungi Anda.';
-  }
-});
 
 /* ── Smooth scroll ───────────────────────── */
 document.querySelectorAll('a[href^="#"]').forEach(function(a) {
