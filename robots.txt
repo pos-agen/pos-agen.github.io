@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://parang.ai/sitemap.xml
+Sitemap: https://posagen.com/sitemap.xml

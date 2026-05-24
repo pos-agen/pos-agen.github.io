@@ -8,19 +8,19 @@
 <meta name="keywords" content="POS distributor, AI order, WhatsApp order, Pos Agen, aplikasi distributor, POS AI, manajemen pesanan, point of sale Indonesia">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Pos Agen">
-<link rel="canonical" href="https://parang.ai/">
+<link rel="canonical" href="https://posagen.com/">
 <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://parang.ai/">
+<meta property="og:url" content="https://posagen.com/">
 <meta property="og:title" content="Pos Agen — POS AI untuk Jualanmu">
 <meta property="og:description" content="AI membaca chat WhatsApp dan langsung membuat pesanan otomatis dalam 5 detik. Akurasi 98%, tanpa ketik ulang. Coba gratis 14 hari.">
 <meta property="og:locale" content="id_ID">
 <meta property="og:site_name" content="Pos Agen">
-<meta property="og:image" content="https://parang.ai/assets/images/dashboard-parang-ai.png">
+<meta property="og:image" content="https://posagen.com/assets/images/dashboard-posagen.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pos Agen — POS AI untuk Jualanmu">
 <meta name="twitter:description" content="AI membaca chat WhatsApp dan membuat pesanan otomatis dalam 5 detik. Daftar kurang dari 1 menit, gratis.">
-<meta name="twitter:image" content="https://parang.ai/assets/images/dashboard-parang-ai.png">
+<meta name="twitter:image" content="https://posagen.com/assets/images/dashboard-posagen.png">
 <meta name="twitter:image:alt" content="Dashboard Pos Agen — POS AI untuk Distributor">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -43,7 +43,7 @@
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "iOS, Android",
   "description": "POS AI untuk distributor. AI membaca chat WhatsApp dan membuat pesanan otomatis dalam 5 detik. Akurasi 98%, daftar kurang dari 1 menit.",
-  "url": "https://parang.ai/",
+  "url": "https://posagen.com/",
   "offers": [
     {"@type":"Offer","name":"Starter","price":"0","priceCurrency":"IDR","description":"5 kontak terdaftar, 1.000 AI kredit/bulan, katalog 20 produk, 1 admin"},
     {"@type":"Offer","name":"Pro","price":"30000","priceCurrency":"IDR","description":"30 kontak terdaftar, 15.000 AI kredit/bulan, katalog unlimited, 3 admin"},
@@ -57,10 +57,10 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Pos Agen",
-  "url": "https://parang.ai/",
+  "url": "https://posagen.com/",
   "logo": {
     "@type": "ImageObject",
-    "url": "https://parang.ai/assets/icons/logo.svg"
+    "url": "https://posagen.com/assets/icons/logo.svg"
   },
   "description": "Pos Agen adalah aplikasi POS AI untuk distributor yang membaca chat WhatsApp dan membuat pesanan otomatis dalam 5 detik.",
   "areaServed": {
@@ -79,12 +79,12 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Pos Agen",
-  "url": "https://parang.ai/",
+  "url": "https://posagen.com/",
   "description": "POS AI untuk distributor. AI membaca chat WhatsApp dan membuat pesanan otomatis dalam 5 detik.",
   "inLanguage": "id-ID"
 }
 </script>
-<link rel="preload" as="image" href="assets/images/dashboard-parang-ai.png" fetchpriority="high">
+<link rel="preload" as="image" href="assets/images/dashboard-posagen.png" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -608,6 +608,9 @@ nav.scrolled { box-shadow: var(--shadow-md); }
 .cta-input::placeholder { color: rgba(255,255,255,0.35); }
 .cta-input:focus { border-color: rgba(255,255,255,0.35); background: rgba(255,255,255,0.12); }
 .cta-note { font-size: 12px; color: rgba(255,255,255,0.32); margin-top: 14px; }
+.cta-success { text-align: center; }
+.cta-success-msg { font-size: 17px; font-weight: 600; color: rgba(255,255,255,0.9); margin-bottom: 8px; }
+.cta-input.invalid { border-color: rgba(255,100,100,0.6); }
 
 /* ── FOOTER ───────────────────────────────────────── */
 footer {
@@ -785,6 +788,7 @@ footer {
   .price-grid { grid-template-columns: repeat(2, 1fr); max-width: 860px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   nav .nav-links { display: none; }
+  nav .nav-logo { margin-right: 0; }
   .hero-ctas .btn { width: 221px; }
 
   #pricing .container {
@@ -795,10 +799,11 @@ footer {
 }
 
 @media (max-width: 640px) {
+  nav { padding: 0 16px; }
   .cta-form { flex-wrap: wrap; }
   .cta-form > * { flex-grow: 1; }
   .how-col { max-width: none; }
-  .sb-item { min-width: 214px; flex: 1; border-bottom: 0.5px solid var(--border); }
+  .sb-item { min-width: 214px; flex: 1; border-bottom: 0.5px solid var(--border); text-align: center; }
   .sb-item:nth-child(2)  { border-right: none; }
   .price-grid { grid-template-columns: 1fr; max-width: 420px; }
 }
@@ -809,7 +814,7 @@ footer {
 
 <!-- ══ ANNOUNCE BAR ══════════════════════════════════ -->
 <div class="announce-bar">
-  <span>🎉 Selama masa Beta: semua fitur gratis &amp; tanpa limit</span>
+  <span>🎉 Selama masa Beta: nikmati semua fitur Bisnis secara gratis!</span>
   <span style="opacity:.4">·</span>
   <a href="#cta">Daftar sekarang →</a>
 </div>
@@ -877,7 +882,7 @@ footer {
         <img src="assets/images/inbox-whatsapp.png" alt="Inbox WhatsApp" fetchpriority="low">
       </div>
       <div class="phone">
-        <img src="assets/images/dashboard-parang-ai.png" alt="Dashboard Pos Agen — POS AI untuk Distributor" fetchpriority="high">
+        <img src="assets/images/dashboard-posagen.png" alt="Dashboard Pos Agen — POS AI untuk Distributor" fetchpriority="high">
       </div>
       <div class="badge-float">
         <div class="badge-ico">⚡</div>
@@ -933,7 +938,7 @@ footer {
         <img src="assets/images/inbox-whatsapp.png" alt="Inbox WhatsApp">
       </div>
       <div class="phone">
-        <img src="assets/images/dashboard-parang-ai.png" alt="Dashboard Parang.ai">
+        <img src="assets/images/dashboard-posagen.png" alt="Dashboard PosAgen">
       </div>
       <div class="badge-float">
         <div class="badge-ico">⚡</div>
@@ -1193,12 +1198,19 @@ footer {
 <!-- ══ CTA ════════════════════════════════════════════ -->
 <section class="cta-sec" id="cta">
   <div class="cta-inner">
-    <h2 class="cta-title fu">Siap hemat waktu<br>input pesanan?</h2>
-    <p class="cta-sub fu">Daftar kurang dari 1 menit dan langsung coba gratis 14 hari — tidak perlu kartu kredit.</p>
-    <div class="fu">
-      <a href="https://wa.me/6280000000000?text=Halo%2C%20saya%20tertarik%20dengan%20Pos%20Agen.%20Boleh%20minta%20info%20lengkap%20tentang%20paket%20yang%20tersedia%3F%20%F0%9F%99%8F" target="_blank" rel="noopener noreferrer" class="btn btn-teal btn-lg">Mulai Sekarang via WhatsApp</a>
+    <h2 class="cta-title fu">Jadilah yang pertama<br>merasakan PosAgen</h2>
+    <p class="cta-sub fu">Akses beta kami terbatas dan dibuka bertahap. Daftarkan email Anda sekarang — kami akan hubungi Anda langsung saat slot tersedia.</p>
+    <div id="betaCta">
+      <form class="cta-form fu" id="betaForm" novalidate>
+        <input class="cta-input" id="betaEmail" type="email" placeholder="alamat@email.com" autocomplete="email" required>
+        <button type="submit" class="btn btn-teal btn-lg">Daftar Akses Beta</button>
+      </form>
+      <p class="cta-note" id="betaNote">Slot terbatas · Gratis selama masa beta · Tanpa kartu kredit</p>
     </div>
-    <p class="cta-note">Gratis 14 hari · Tanpa kartu kredit · Bisa batal kapan saja</p>
+    <div class="cta-success" id="betaSuccess" hidden>
+      <p class="cta-success-msg fu vis">Pendaftaran diterima!</p>
+      <p class="cta-note">Tim kami akan menghubungi Anda di email yang didaftarkan dalam 1–2 hari kerja.</p>
+    </div>
     <div class="cta-dl-wrap fu">
       <div class="cta-dl-or">atau download aplikasi</div>
       <div class="cta-dl-badges">
@@ -1317,6 +1329,24 @@ var io = new IntersectionObserver(function(entries) {
   entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('vis'); });
 }, { threshold: 0.12 });
 document.querySelectorAll('.fu').forEach(function(el) { io.observe(el); });
+
+/* ── Beta form ───────────────────────────── */
+document.getElementById('betaForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var emailEl = document.getElementById('betaEmail');
+  var email = emailEl.value.trim();
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    emailEl.classList.add('invalid');
+    emailEl.focus();
+    return;
+  }
+  emailEl.classList.remove('invalid');
+  var msg = 'Halo! Saya ingin mendaftar akses beta PosAgen.\n\nEmail saya: ' + email + '\n\nMohon info selanjutnya. Terima kasih 🙏';
+  window.open('https://wa.me/+85111651121?text=' + encodeURIComponent(msg), '_blank', 'noopener,noreferrer');
+  document.getElementById('betaCta').style.display = 'none';
+  var success = document.getElementById('betaSuccess');
+  success.removeAttribute('hidden');
+});
 
 /* ── Smooth scroll ───────────────────────── */
 document.querySelectorAll('a[href^="#"]').forEach(function(a) {
