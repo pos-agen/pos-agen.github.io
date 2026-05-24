@@ -9,6 +9,7 @@
 <meta name="robots" content="index, follow">
 <meta name="author" content="Pos Agen">
 <link rel="canonical" href="https://parang.ai/">
+<link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://parang.ai/">
 <meta property="og:title" content="Pos Agen — POS AI untuk Jualanmu">
@@ -20,6 +21,20 @@
 <meta name="twitter:title" content="Pos Agen — POS AI untuk Jualanmu">
 <meta name="twitter:description" content="AI membaca chat WhatsApp dan membuat pesanan otomatis dalam 5 detik. Daftar kurang dari 1 menit, gratis.">
 <meta name="twitter:image" content="https://parang.ai/assets/images/dashboard-parang-ai.png">
+<meta name="twitter:image:alt" content="Dashboard Pos Agen — POS AI untuk Distributor">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dashboard Pos Agen — POS AI untuk Distributor">
+<meta name="theme-color" content="#003d3e" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c1818" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pos Agen">
+<meta name="application-name" content="Pos Agen">
+<meta name="geo.region" content="ID">
+<meta name="geo.country" content="Indonesia">
+<link rel="apple-touch-icon" href="assets/icons/logo.svg">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -37,6 +52,39 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pos Agen",
+  "url": "https://parang.ai/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://parang.ai/assets/icons/logo.svg"
+  },
+  "description": "Pos Agen adalah aplikasi POS AI untuk distributor yang membaca chat WhatsApp dan membuat pesanan otomatis dalam 5 detik.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Indonesia"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "availableLanguage": "Indonesian"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Pos Agen",
+  "url": "https://parang.ai/",
+  "description": "POS AI untuk distributor. AI membaca chat WhatsApp dan membuat pesanan otomatis dalam 5 detik.",
+  "inLanguage": "id-ID"
+}
+</script>
+<link rel="preload" as="image" href="assets/images/dashboard-parang-ai.png" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -767,7 +815,7 @@ footer {
 </div>
 
 <!-- ══ NAV ══════════════════════════════════════════ -->
-<nav id="navbar">
+<nav id="navbar" aria-label="Navigasi utama">
   <a class="nav-logo" href="#">
     <img class="logo-svg logo-light" src="assets/icons/logo.svg" width="30" height="30" alt="Pos Agen">
     <img class="logo-svg logo-dark" src="assets/icons/dark-logo.svg" width="30" height="30" alt="Pos Agen">
@@ -784,6 +832,7 @@ footer {
   </div>
 </nav>
 
+<main>
 <!-- ══ HERO A: BOLD DARK ═════════════════════════════ -->
 <section class="hero-a">
   <div class="hero-a-grid"></div>
@@ -825,10 +874,10 @@ footer {
     </div>
     <div class="phone-wrap">
       <div class="phone-back">
-        <img src="assets/images/inbox-whatsapp.png" alt="Inbox WhatsApp">
+        <img src="assets/images/inbox-whatsapp.png" alt="Inbox WhatsApp" fetchpriority="low">
       </div>
       <div class="phone">
-        <img src="assets/images/dashboard-parang-ai.png" alt="Dashboard Parang.ai">
+        <img src="assets/images/dashboard-parang-ai.png" alt="Dashboard Pos Agen — POS AI untuk Distributor" fetchpriority="high">
       </div>
       <div class="badge-float">
         <div class="badge-ico">⚡</div>
@@ -935,7 +984,7 @@ footer {
         </div>
         <div class="demo-card fu">
           <div class="demo-frame">
-            <img src="assets/images/inbox-whatsapp.png" alt="Inbox WhatsApp">
+            <img src="assets/images/inbox-whatsapp.png" alt="Inbox WhatsApp" loading="lazy" decoding="async">
           </div>
           <div class="demo-tag">Langkah 1–2</div>
           <div class="demo-label">Inbox Chat</div>
@@ -949,7 +998,7 @@ footer {
         </div>
         <div class="demo-card fu fu-d1">
           <div class="demo-frame">
-            <img src="assets/images/ai-memproses.png" alt="AI Memproses">
+            <img src="assets/images/ai-memproses.png" alt="AI Memproses" loading="lazy" decoding="async">
           </div>
           <div class="demo-tag">Langkah 3</div>
           <div class="demo-label">AI Memproses</div>
@@ -963,7 +1012,7 @@ footer {
         </div>
         <div class="demo-card fu fu-d2">
           <div class="demo-frame">
-            <img src="assets/images/review-pesanan.png" alt="Review Pesanan">
+            <img src="assets/images/review-pesanan.png" alt="Review Pesanan" loading="lazy" decoding="async">
           </div>
           <div class="demo-tag">Langkah 4</div>
           <div class="demo-label">Periksa &amp; Konfirmasi</div>
@@ -977,7 +1026,7 @@ footer {
         </div>
         <div class="demo-card fu fu-d3">
           <div class="demo-frame">
-            <img src="assets/images/pesanan-dibuat.png" alt="Pesanan Dibuat">
+            <img src="assets/images/pesanan-dibuat.png" alt="Pesanan Dibuat" loading="lazy" decoding="async">
           </div>
           <div class="demo-tag">Selesai ✓</div>
           <div class="demo-label">Order Tersimpan</div>
@@ -1010,7 +1059,7 @@ footer {
           </ul>
         </div>
         <div class="feat-demo">
-          <img src="assets/images/review-pesanan.png" alt="Periksa Pesanan">
+          <img src="assets/images/review-pesanan.png" alt="Periksa Pesanan" loading="lazy" decoding="async">
         </div>
       </div>
 
@@ -1172,6 +1221,8 @@ footer {
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- ══ FOOTER ═════════════════════════════════════════ -->
 <footer>
